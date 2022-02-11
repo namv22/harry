@@ -11,7 +11,6 @@ const routes = [
     path: "/tables",
     name: "Tables",
     component: Tables,
-    redirect: "/tables",
   },
 ];
 
