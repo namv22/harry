@@ -19,7 +19,7 @@
   </aside>
 </template>
 <script>
-import logo from "@/assets/img/logo-ct.png";
+import logo from "@/assets/img/avatar.png";
 
 export default {
   name: "index",

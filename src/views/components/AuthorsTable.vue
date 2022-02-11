@@ -9,43 +9,25 @@
           <thead>
             <tr>
               <th
-                class="
-                  text-uppercase text-secondary text-xxs
-                  font-weight-bolder
-                  opacity-7
-                "
+                class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7"
               >
                 Web
               </th>
               <th
-                class="
-                  text-uppercase text-secondary text-xxs
-                  font-weight-bolder
-                  opacity-7
-                  ps-2
-                "
+                class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2"
               >
                 Function
               </th>
               <th
-                class="
-                  text-center text-uppercase text-secondary text-xxs
-                  font-weight-bolder
-                  opacity-7
-                "
-              >
-                Status
-              </th>
-              <th
-                class="
-                  text-center text-uppercase text-secondary text-xxs
-                  font-weight-bolder
-                  opacity-7
-                "
+                class="text-left text-uppercase text-secondary text-xxs font-weight-bolder opacity-7"
               >
                 Address
               </th>
-              <th class="text-secondary opacity-7"></th>
+              <th
+                class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7"
+              >
+                Status
+              </th>
             </tr>
           </thead>
           <tbody>
@@ -64,7 +46,7 @@
                   <div class="d-flex flex-column justify-content-center">
                     <h6 class="mb-0 text-sm">Jellyfin</h6>
                     <p class="text-xs text-secondary mb-0">
-                      john@creative-tim.com
+                      {{ ip }}
                     </p>
                   </div>
                 </div>
@@ -75,23 +57,12 @@
                   Anime, Movies, TV Shows
                 </p>
               </td>
+              <td class="align-middle text-left">
+                <a :href="'http://' + ip + ':8096'"> {{ ip }}:8096 </a>
+              </td>
               <td class="align-middle text-center text-sm">
-                <vsud-badge color="secondary" variant="gradient" size="sm"
-                  >Offline</vsud-badge
-                >
-              </td>
-              <td class="align-middle text-center">
-                <span class="text-secondary text-xs font-weight-bold">
-                  <a :href="'http://' + ip + ':8096'"> {{ ip }}:8096 </a>
-                </span>
-              </td>
-              <td class="align-middle">
-                <a
-                  href="javascript:;"
-                  class="text-secondary font-weight-bold text-xs"
-                  data-toggle="tooltip"
-                  data-original-title="Edit user"
-                  >Edit</a
+                <vsud-badge color="success" variant="gradient" size="sm"
+                  >ONLINE</vsud-badge
                 >
               </td>
             </tr>
@@ -109,9 +80,7 @@
                   </div>
                   <div class="d-flex flex-column justify-content-center">
                     <h6 class="mb-0 text-sm">Bitwarden</h6>
-                    <p class="text-xs text-secondary mb-0">
-                      alexa@creative-tim.com
-                    </p>
+                    <p class="text-xs text-secondary mb-0">bitwarden.com</p>
                   </div>
                 </div>
               </td>
@@ -121,23 +90,12 @@
                   Store password across devices
                 </p>
               </td>
+              <td class="align-middle text-left">
+                <a href="https://vault.bitwarden.com/"> vault.bitwarden.com </a>
+              </td>
               <td class="align-middle text-center text-sm">
                 <vsud-badge color="success" variant="gradient" size="sm"
-                  >Online</vsud-badge
-                >
-              </td>
-              <td class="align-middle text-center">
-                <span class="text-secondary text-xs font-weight-bold"
-                  >11/01/19</span
-                >
-              </td>
-              <td class="align-middle">
-                <a
-                  href="javascript:;"
-                  class="text-secondary font-weight-bold text-xs"
-                  data-toggle="tooltip"
-                  data-original-title="Edit user"
-                  >Edit</a
+                  >ONLINE</vsud-badge
                 >
               </td>
             </tr>
@@ -155,35 +113,22 @@
                   </div>
                   <div class="d-flex flex-column justify-content-center">
                     <h6 class="mb-0 text-sm">Raindrop</h6>
-                    <p class="text-xs text-secondary mb-0">
-                      alexa@creative-tim.com
-                    </p>
+                    <p class="text-xs text-secondary mb-0">raindrop.io</p>
                   </div>
                 </div>
               </td>
               <td>
                 <p class="text-xs font-weight-bold mb-0">Bookmark Manager</p>
                 <p class="text-xs text-secondary mb-0">
-                  Store bookmark across browser
+                  Store bookmark across browsers
                 </p>
+              </td>
+              <td class="align-middle text-left">
+                <a href="https://app.raindrop.io/"> app.raindrop.io </a>
               </td>
               <td class="align-middle text-center text-sm">
                 <vsud-badge color="success" variant="gradient" size="sm"
-                  >Online</vsud-badge
-                >
-              </td>
-              <td class="align-middle text-center">
-                <span class="text-secondary text-xs font-weight-bold"
-                  >11/01/19</span
-                >
-              </td>
-              <td class="align-middle">
-                <a
-                  href="javascript:;"
-                  class="text-secondary font-weight-bold text-xs"
-                  data-toggle="tooltip"
-                  data-original-title="Edit user"
-                  >Edit</a
+                  >ONLINE</vsud-badge
                 >
               </td>
             </tr>

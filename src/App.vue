@@ -12,12 +12,6 @@
     :style="this.$store.state.isRTL ? 'overflow-x: hidden' : ''"
   >
     <!-- nav -->
-    <navbar
-      :class="[navClasses]"
-      :textWhite="this.$store.state.isAbsolute ? 'text-white opacity-8' : ''"
-      :minNav="navbarMinimize"
-      v-if="this.$store.state.showNavbar"
-    />
     <router-view />
     <configurator
       :toggle="toggleConfigurator"
@@ -31,14 +25,12 @@
 <script>
 import Sidenav from "./examples/Sidenav";
 import Configurator from "@/examples/Configurator.vue";
-import Navbar from "@/examples/Navbars/Navbar.vue";
 import { mapMutations } from "vuex";
 export default {
   name: "App",
   components: {
     Sidenav,
     Configurator,
-    Navbar,
   },
   methods: {
     ...mapMutations(["toggleConfigurator", "navbarMinimize"]),
