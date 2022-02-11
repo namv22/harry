@@ -1,4 +1,4 @@
-cd /d f:\Coding\harryvu
+cd /d f:\Coding\harry
 git add *
 git commit -m "$m"
 git push -u origin main
