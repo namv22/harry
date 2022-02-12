@@ -16,6 +16,6 @@ address = {
 json_object = json.dumps(address, indent = 1)
   
 # Writing to sample.json
-with open("./src/ip.json", "w") as outfile:
+with open("F:\Coding\harry\src\ip.json", "w") as outfile:
     outfile.write(json_object)
 
