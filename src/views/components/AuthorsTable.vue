@@ -41,10 +41,11 @@
                       border-radius="lg"
                       class="me-3"
                       alt="user1"
+                      :href="'http://' + ip + ':8096'"
                     />
                   </div>
                   <div class="d-flex flex-column justify-content-center">
-                    <h6 class="mb-0 text-sm">Jellyfin</h6>
+                    <h6 class="mb-0 text-sm" :href="'http://' + ip + ':8096'">Jellyfin</h6>
                     <p class="text-xs text-secondary mb-0">
                       {{ ip }}
                     </p>
@@ -76,10 +77,11 @@
                       size="sm"
                       border-radius="lg"
                       alt="user2"
+                      href="https://vault.bitwarden.com/"
                     />
                   </div>
                   <div class="d-flex flex-column justify-content-center">
-                    <h6 class="mb-0 text-sm">Bitwarden</h6>
+                    <h6 class="mb-0 text-sm" href="https://vault.bitwarden.com/">Bitwarden</h6>
                     <p class="text-xs text-secondary mb-0">bitwarden.com</p>
                   </div>
                 </div>
@@ -109,10 +111,11 @@
                       size="sm"
                       border-radius="lg"
                       alt="user2"
+                      href="https://app.raindrop.io/"
                     />
                   </div>
                   <div class="d-flex flex-column justify-content-center">
-                    <h6 class="mb-0 text-sm">Raindrop</h6>
+                    <h6 class="mb-0 text-sm" src="https://app.raindrop.io/">Raindrop</h6>
                     <p class="text-xs text-secondary mb-0">raindrop.io</p>
                   </div>
                 </div>
